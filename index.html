@@ -1,11 +1,34 @@
 <!doctype html>
 <html>
     <head>
-        <title>給寶貝的時差換算器</title>
+        <title>Distant Lover Clock</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link type="text/css" rel="stylesheet" href="css/index.css">
     </head>
 
     <body>
-        <h1>給寶貝的時差換算器</h1>
+        <div id="header">
+            <div>Distant Lover Clock</div>
+        </div>
+        <div id="content">
+            <div id="here" class="zone">
+                <div class="place-name">Taipei, Taiwan</div>
+                <div class="time">13:40</div>
+                <div class="date">7/15</div>
+            </div>
+            <div id="there" class="zone">
+                <div class="place-name">Quebec, Canada</div>
+                <div class="time">4:40</div>
+                <div class="date">7/15</div>
+            </div>
+            <svg id="circles" height="500" width="1000">
+                <circle cx="250" cy="250" r="250" fill="MediumPurple" />
+                <circle cx="750" cy="250" r="250" fill="Khaki" />
+            </svg>
+        </div>
+        <div id="footer">
+            <div id="love-words-title">Daily Love Words</div>
+            <div id="love-words-content">I am leaving, but I will never leave you.</div>
+        </div>
     </body>
 </html>

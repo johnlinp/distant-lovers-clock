@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Latin Modern Roman Dunhill";
+    src: url(../fonts/lmromandunh10-regular.otf);
+}
+
+body {
+    background: Gainsboro;
+    font-family: "Latin Modern Roman Dunhill";
+    text-align: center;
+}
+
+#header {
+    font-size: 50px;
+}
+
+#content {
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    width: 1000px;
+}
+
+.zone {
+    position: absolute;
+    width: 500px;
+}
+
+#here {
+    left: 0;
+    color: White;
+}
+
+#there {
+    left: 500px;
+    color: Black;
+}
+
+.place-name {
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.time {
+    font-size: 130px;
+}
+
+.date {
+    font-size: 40px;
+}
+
+#love-words-title {
+    font-size: 20px;
+}
+
+#love-words-content {
+    font-size: 30px;
+}
