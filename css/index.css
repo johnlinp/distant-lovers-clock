@@ -53,8 +53,10 @@ body {
 
 #love-words-title {
     font-size: 20px;
+    opacity: 0;
 }
 
 #love-words-content {
     font-size: 30px;
+    opacity: 0;
 }
