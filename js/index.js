@@ -11,6 +11,9 @@
     var getTime = function(now) {
         var hour = now.getHours();
         var minute = now.getMinutes();
+        if(minute < 10) {
+            minute = '0' + minute;
+        }
         return hour + ':' + minute;
     };
 
@@ -54,7 +57,7 @@
 
     var putLoveWords = function() {
         var loveWords = {
-            '7/12': 'Love is such a crazy little thing.',
+            '7/12': 'What I did so far, is only for you.',
             '7/13': 'Always remeber, you are mine, and I am yours.',
             '7/14': 'I am leaving, but I will never leave you.',
             '7/15': 'Are you missing me already? Me too.',
