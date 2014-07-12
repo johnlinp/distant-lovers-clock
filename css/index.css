@@ -35,17 +35,20 @@ body {
     color: Black;
 }
 
-.place-name {
+.place {
     font-size: 20px;
     margin-top: 60px;
+    opacity: 0;
 }
 
 .time {
     font-size: 130px;
+    opacity: 0;
 }
 
 .date {
     font-size: 40px;
+    opacity: 0;
 }
 
 #love-words-title {
