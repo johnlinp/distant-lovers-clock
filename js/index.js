@@ -71,7 +71,7 @@
             '7/23': 'You are the strongest woman in the world.',
             '7/24': 'Say hello to Dr. Chien for me.',
             '7/25': 'Sad five years and seven months, without you here.',
-            '7/26': 'Wish you a fantastic dinner with Wify.',
+            '7/26': 'Wish you a fantastic lunch with Wify.',
             '7/27': 'Your smile is sweeter than the maple syrup.',
             '7/28': "Je t'aime.",
             '7/29': 'Let me show my French when we travel in France.',
