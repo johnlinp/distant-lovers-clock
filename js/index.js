@@ -76,19 +76,21 @@
             '7/28': "Je t'aime.",
             '7/29': 'Let me show my French when we travel in France.',
             '7/30': 'Everything is meaningless without you.',
-            '7/31': 'Happy leaving Academia Sinica!',
-            '8/1': 'Little Zong Zong baby~',
-            '8/2': '',
+            '7/31': 'Wish you a nice trip to Jiaoxi.',
+            '8/1': 'Little Zhong baby~',
+            '8/2': "We will have the best Chinese Valentine's Day when I come back.",
             '8/3': '',
             '8/4': '',
             '8/5': '',
             '8/6': '',
-            '8/7': '',
-            '8/8': '',
-            '8/9': '',
+            '8/7': 'I am coming back!',
         };
 
-        $('#love-words-content').html(loveWords[getDate(getHere())]);
+        var today = loveWords[getDate(getHere())];
+        if(today == undefined) {
+            today = 'It feels so good that we are in the same city.';
+        }
+        $('#love-words-content').html(today);
     };
 
     updateClock();
