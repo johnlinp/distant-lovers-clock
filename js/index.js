@@ -79,11 +79,12 @@
             '7/31': 'If you were a conference, I will submit a paper every year.',
             '8/1': 'Little Zhong baby~',
             '8/2': "We will have the best Chinese Valentine's Day when I come back.",
-            '8/3': '',
-            '8/4': '',
+            '8/3': "It's a good time to get married, isn't it?",
+            '8/4': 'Wish you a nice dinner with Chou and Wen Kai.',
             '8/5': '',
             '8/6': '',
             '8/7': 'I am coming back!',
+            '8/8': 'I miss you at 10000 inches high.',
         };
 
         var today = loveWords[getDate(getHere())];
