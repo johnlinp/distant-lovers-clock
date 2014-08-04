@@ -82,8 +82,8 @@
             '8/3': "It's a good time to get married, isn't it?",
             '8/4': 'Wish you a nice dinner with Chou and Wen Kai.',
             '8/5': "I've hungered for your touch.",
-            '8/6': '',
-            '8/7': 'I am coming back!',
+            '8/6': 'Please stick with me when I come back.',
+            '8/7': 'Thank you for the waiting, and I am coming back!',
             '8/8': 'I miss you at 10000 inches high.',
         };
 
