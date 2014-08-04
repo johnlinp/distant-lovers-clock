@@ -81,7 +81,7 @@
             '8/2': "We will have the best Chinese Valentine's Day when I come back.",
             '8/3': "It's a good time to get married, isn't it?",
             '8/4': 'Wish you a nice dinner with Chou and Wen Kai.',
-            '8/5': '',
+            '8/5': "i've hungered for your touch",
             '8/6': '',
             '8/7': 'I am coming back!',
             '8/8': 'I miss you at 10000 inches high.',
