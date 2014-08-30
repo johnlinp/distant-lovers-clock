@@ -5,7 +5,7 @@
 
     var getThere = function() {
         var now = new Date();
-        return new Date(now.getTime() - 12 * 60 * 60 * 1000);
+        return new Date(now.getTime() + 1 * 60 * 60 * 1000);
     };
 
     var getTime = function(now) {
@@ -57,34 +57,17 @@
 
     var putLoveWords = function() {
         var loveWords = {
-            '7/12': 'What I did so far, is only for you.',
-            '7/13': 'Always remember, you are mine, and I am yours.',
-            '7/14': 'I am leaving, but I will never leave you.',
-            '7/15': 'Are you missing me already? Me too.',
-            '7/16': "Quebec sucks. I can't find you here.",
-            '7/17': 'I hope Brian take care of you.',
-            '7/18': 'Happy birthday to your sister and dad!',
-            '7/19': 'Wish you were here.',
-            '7/20': 'How is our lovely Agogo?',
-            '7/21': 'When you sneeze, I am missing you.',
-            '7/22': 'Can you see my love in my paintings?',
-            '7/23': 'You are the strongest woman in the world.',
-            '7/24': 'Say hello to Dr. Chien for me.',
-            '7/25': 'Sad five years and seven months, without you here.',
-            '7/26': 'Wish you a fantastic lunch with Wify.',
-            '7/27': 'Your smile is sweeter than the maple syrup.',
-            '7/28': "Je t'aime.",
-            '7/29': 'Let me show my French when we travel in France.',
-            '7/30': 'Everything is meaningless without you.',
-            '7/31': 'If you were a conference, I will submit a paper every year.',
-            '8/1': 'Little Zhong baby~',
-            '8/2': "We will have the best Chinese Valentine's Day when I come back.",
-            '8/3': "It's a good time to get married, isn't it?",
-            '8/4': 'Wish you a nice dinner with Chou and Wen Kai.',
-            '8/5': "I've hungered for your touch.",
-            '8/6': 'Please stick with me when I come back.',
-            '8/7': 'Thank you for the waiting, and I am coming back!',
-            '8/8': 'I miss you at 10000 inches high.',
+            '8/31': "Don't cry for me baby. I will be back very soon.",
+            '9/1': 'Watashi miss anata so much.',
+            '9/2': 'The One Kisses You Ought to be me.',
+            '9/3': "How about going to Disney Land with me in the future?',
+            '9/4': 'There are gifts for you!',
+            '9/5': '',
+            '9/6': '',
+            '9/7': '',
+            '9/8': '',
+            '9/9': '',
+            '9/10': 'Happy birthday!',
         };
 
         var today = loveWords[getDate(getHere())];
