@@ -60,7 +60,7 @@
             '8/31': "Don't cry for me baby. I will be back very soon.",
             '9/1': 'Watashi miss anata so much.',
             '9/2': 'The One Kisses You Ought to be me.',
-            '9/3': "How about going to Disney Land with me in the future?',
+            '9/3': "How about going to Disney Land with me in the future?",
             '9/4': 'There are gifts for you!',
             '9/5': '',
             '9/6': '',
