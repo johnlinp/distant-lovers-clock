@@ -5,7 +5,8 @@
 
     var getThere = function() {
         var now = new Date();
-        return new Date(now.getTime() + 1 * 60 * 60 * 1000);
+        var timeDiff = 0;
+        return new Date(now.getTime() + timeDiff * 60 * 60 * 1000);
     };
 
     var getTime = function(now) {
