@@ -63,11 +63,11 @@
             '9/2': 'The One Kisses You Ought to be me.',
             '9/3': "How about going to Disney Land with me in the future?",
             '9/4': 'There are gifts for you!',
-            '9/5': '',
-            '9/6': '',
-            '9/7': '',
-            '9/8': '',
-            '9/9': '',
+            '9/5': 'Sorry for leaving again. I will be back soon too.',
+            '9/6': 'Imagining our marriage life makes me so satisfied.',
+            '9/7': 'Love is you, and you are my love.',
+            '9/8': 'Wish you a happy Moon Festival.',
+            '9/9': 'I am back again : )',
             '9/10': 'Happy birthday!',
         };
 
