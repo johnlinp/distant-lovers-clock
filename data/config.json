@@ -1,0 +1,121 @@
+{
+    "home":
+    {
+        "place": "Taipei, Taiwan",
+        "words": "It feels so good that we are in the same city."
+    },
+    "trips":
+    {
+        "aaaiQuebec":
+        {
+            "here": "Taipei, Taiwan",
+            "there": "Quebec, Canada",
+            "timeDiff": -12,
+            "words":
+            {
+                "2014/7/12": "What I did so far, is only for you.",
+                "2014/7/13": "Always remember, you are mine, and I am yours.",
+                "2014/7/14": "I am leaving, but I will never leave you.",
+                "2014/7/15": "Are you missing me already? Me too.",
+                "2014/7/16": "Quebec sucks. I can't find you here.",
+                "2014/7/17": "I hope Brian take care of you.",
+                "2014/7/18": "Happy birthday to your sister and dad!",
+                "2014/7/19": "Wish you were here.",
+                "2014/7/20": "How is our lovely Agogo?",
+                "2014/7/21": "When you sneeze, I am missing you.",
+                "2014/7/22": "Can you see my love in my paintings?",
+                "2014/7/23": "You are the strongest woman in the world.",
+                "2014/7/24": "Say hello to Dr. Chien for me.",
+                "2014/7/25": "Sad five years and seven months, without you here.",
+                "2014/7/26": "Wish you a fantastic lunch with Wify.",
+                "2014/7/27": "Your smile is sweeter than the maple syrup.",
+                "2014/7/28": "Je t'aime.",
+                "2014/7/29": "Let me show my French when we travel in France.",
+                "2014/7/30": "Everything is meaningless without you.",
+                "2014/7/31": "If you were a conference, I will submit a paper every year.",
+                "2014/8/1": "Little Zhong baby~",
+                "2014/8/2": "We will have the best Chinese Valentine's Day when I come back.",
+                "2014/8/3": "It's a good time to get married, isn't it?",
+                "2014/8/4": "Wish you a nice dinner with Chou and Wen Kai.",
+                "2014/8/5": "I've hungered for your touch.",
+                "2014/8/6": "Please stick with me when I come back.",
+                "2014/8/7": "Thank you for the waiting, and I am coming back!",
+                "2014/8/8": "I miss you at 10000 inches high."
+            }
+        },
+        "familyTokyo":
+        {
+            "here": "Taipei, Taiwan",
+            "there": "Tokyo, Japan",
+            "timeDiff": 1,
+            "words":
+            {
+                "2014/8/30": "I will miss my little short hair girl.",
+                "2014/8/31": "Don't cry for me baby. I will be back very soon.",
+                "2014/9/1": "Watashi love anata so much.",
+                "2014/9/2": "The One Kisses You Ought to be me.",
+                "2014/9/3": "How about going to Disney Land with me in the future?",
+                "2014/9/4": "There are gifts for you!"
+            }
+        },
+        "familyTaichung":
+        {
+            "here": "Taipei, Taiwan",
+            "there": "Taichung, Taiwan",
+            "timeDiff": 0,
+            "words":
+            {
+                "2014/9/5": "Sorry for leaving again. I will be back soon too.",
+                "2014/9/6": "Imagining our marriage life makes me so satisfied.",
+                "2014/9/7": "Love is you, and you are my love.",
+                "2014/9/8": "Wish you a happy Moon Festival.",
+                "2014/9/9": "I am back again : )",
+                "2014/9/10": "Happy birthday!"
+            }
+        },
+        "hcompPittsburghPart1":
+        {
+            "here": "Kaohsiung, Taiwan",
+            "there": "Pittsburgh, United States",
+            "timeDiff": -12,
+            "words":
+            {
+                "2014/10/31": "We had a nice goodbye in the morning.",
+                "2014/11/1": ""
+            }
+        },
+        "hcompPittsburghPart2":
+        {
+            "here": "Taipei, Taiwan",
+            "there": "Pittsburgh, United States",
+            "timeDiff": -12,
+            "words":
+            {
+                "2014/11/2": "",
+                "2014/11/3": ""
+            }
+        },
+        "hcompPittsburghPart3":
+        {
+            "here": "Taichung, Taiwan",
+            "there": "Pittsburgh, United States",
+            "timeDiff": -12,
+            "words":
+            {
+                "2014/11/4": "",
+                "2014/11/5": ""
+            }
+        },
+        "hcompPittsburghPart4":
+        {
+            "here": "Taipei, Taiwan",
+            "there": "Pittsburgh, United States",
+            "timeDiff": -12,
+            "words":
+            {
+                "2014/11/6": "",
+                "2014/11/7": "Are you coming to pick me up?"
+            }
+        }
+    }
+}

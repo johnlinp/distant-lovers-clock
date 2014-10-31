@@ -1,11 +1,34 @@
 (function() {
+    var trip;
+
+    var loadTrip = function(callback) {
+        $.get('data/config.json', function(config) {
+            var today = getDate(getHere());
+            for(var tripName in config.trips) {
+                if(today in config.trips[tripName].words) {
+                    trip = config.trips[tripName];
+                }
+            }
+            if(typeof trip == typeof undefined) {
+                trip = {
+                    'here': config.home.place,
+                    'there': config.home.place,
+                    'timeDiff': 0,
+                    'words': {}
+                };
+                trip.words[today] = config.home.words;
+            }
+            callback();
+        }, 'json');
+    };
+
     var getHere = function() {
         return new Date();
     };
 
     var getThere = function() {
         var now = new Date();
-        var timeDiff = 0;
+        var timeDiff = trip.timeDiff;
         return new Date(now.getTime() + timeDiff * 60 * 60 * 1000);
     };
 
@@ -19,9 +42,15 @@
     };
 
     var getDate = function(now) {
+        var year = now.getFullYear();
         var month = now.getMonth() + 1;
         var date = now.getDate();
-        return month + '/' + date;
+        return year + '/' + month + '/' + date;
+    };
+
+    var putPlaces = function() {
+        $('#here .place').html(trip.here);
+        $('#there .place').html(trip.there);
     };
 
     var updateClock = function() {
@@ -57,31 +86,16 @@
     };
 
     var putLoveWords = function() {
-        var loveWords = {
-            '8/30': 'I will miss my little short hair girl.',
-            '8/31': "Don't cry for me baby. I will be back very soon.",
-            '9/1': 'Watashi love anata so much.',
-            '9/2': 'The One Kisses You Ought to be me.',
-            '9/3': "How about going to Disney Land with me in the future?",
-            '9/4': 'There are gifts for you!',
-            '9/5': 'Sorry for leaving again. I will be back soon too.',
-            '9/6': 'Imagining our marriage life makes me so satisfied.',
-            '9/7': 'Love is you, and you are my love.',
-            '9/8': 'Wish you a happy Moon Festival.',
-            '9/9': 'I am back again : )',
-            '9/10': 'Happy birthday!',
-        };
-
-        var today = loveWords[getDate(getHere())];
-        if(today == undefined) {
-            today = 'It feels so good that we are in the same city.';
-        }
+        var today = trip.words[getDate(getHere())];
         $('#love-words-content').html(today);
     };
 
-    updateClock();
-    setInterval(updateClock, 5000);
-    putLoveWords();
-    fadeInAll();
+    loadTrip(function() {
+        putPlaces();
+        updateClock();
+        setInterval(updateClock, 5000);
+        putLoveWords();
+        fadeInAll();
+    });
 })();
 
