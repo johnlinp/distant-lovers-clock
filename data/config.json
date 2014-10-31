@@ -43,6 +43,7 @@
                 "2014/8/8": "I miss you at 10000 inches high."
             }
         },
+
         "familyTokyo":
         {
             "here": "Taipei, Taiwan",
@@ -58,6 +59,7 @@
                 "2014/9/4": "There are gifts for you!"
             }
         },
+
         "familyTaichung":
         {
             "here": "Taipei, Taiwan",
@@ -73,6 +75,7 @@
                 "2014/9/10": "Happy birthday!"
             }
         },
+
         "hcompPittsburghPart1":
         {
             "here": "Kaohsiung, Taiwan",
@@ -81,7 +84,7 @@
             "words":
             {
                 "2014/10/31": "We had a nice goodbye in the morning.",
-                "2014/11/1": ""
+                "2014/11/1": "John in the Sky without Diamond."
             }
         },
         "hcompPittsburghPart2":
@@ -91,8 +94,8 @@
             "timeDiff": -12,
             "words":
             {
-                "2014/11/2": "",
-                "2014/11/3": ""
+                "2014/11/2": "You will have wonderful grades on the exam!",
+                "2014/11/3": "It's so cold sleeping here, especially without you."
             }
         },
         "hcompPittsburghPart3":
@@ -102,8 +105,8 @@
             "timeDiff": -12,
             "words":
             {
-                "2014/11/4": "",
-                "2014/11/5": ""
+                "2014/11/4": "Just finished my presentation... exhausted.",
+                "2014/11/5": "Miss your voice, hugs, kisses, and smiles."
             }
         },
         "hcompPittsburghPart4":
@@ -113,7 +116,7 @@
             "timeDiff": -12,
             "words":
             {
-                "2014/11/6": "",
+                "2014/11/6": "Today is the only day for visiting Pittsburgh!",
                 "2014/11/7": "Are you coming to pick me up?"
             }
         }
