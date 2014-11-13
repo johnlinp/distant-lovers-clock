@@ -3,23 +3,35 @@
 
     var loadTrip = function(callback) {
         $.get('data/config.json', function(config) {
-            var today = getDate(getHere());
-            for(var tripName in config.trips) {
-                if(today in config.trips[tripName].words) {
-                    trip = config.trips[tripName];
-                }
-            }
-            if(typeof trip == typeof undefined) {
-                trip = {
-                    'here': config.home.place,
-                    'there': config.home.place,
-                    'timeDiff': 0,
-                    'words': {}
-                };
-                trip.words[today] = config.home.words;
-            }
+            chooseTrip(config);
+            circleColor(config);
             callback();
         }, 'json');
+    };
+
+    var chooseTrip = function(config) {
+        var today = getDate(getHere());
+
+        for(var tripName in config.trips) {
+            if(today in config.trips[tripName].words) {
+                trip = config.trips[tripName];
+            }
+        }
+
+        if(typeof trip == typeof undefined) {
+            trip = {
+                'here': config.home.place,
+                'there': config.home.place,
+                'timeDiff': 0,
+                'words': {}
+            };
+            trip.words[today] = config.home.words;
+        }
+    };
+
+    var circleColor = function(config) {
+        $('#here-circle').attr('fill', config.colors.here);
+        $('#there-circle').attr('fill', config.colors.there);
     };
 
     var getHere = function() {
@@ -49,27 +61,27 @@
     };
 
     var putPlaces = function() {
-        $('#here .place').html(trip.here);
-        $('#there .place').html(trip.there);
+        $('#here-text .place').html(trip.here);
+        $('#there-text .place').html(trip.there);
     };
 
     var updateClock = function() {
         var here = getHere();
         var there = getThere();
-        $('#here .time').html(getTime(here));
-        $('#here .date').html(getDate(here));
-        $('#there .time').html(getTime(there));
-        $('#there .date').html(getDate(there));
+        $('#here-text .time').html(getTime(here));
+        $('#here-text .date').html(getDate(here));
+        $('#there-text .time').html(getTime(there));
+        $('#there-text .date').html(getDate(there));
     };
 
     var fadeInAll = function() {
         var items = [
-            $('#here .place'),
-            $('#here .time'),
-            $('#here .date'),
-            $('#there .place'),
-            $('#there .time'),
-            $('#there .date'),
+            $('#here-text .place'),
+            $('#here-text .time'),
+            $('#here-text .date'),
+            $('#there-text .place'),
+            $('#there-text .time'),
+            $('#there-text .date'),
             $('#love-words-title'),
             $('#love-words-content'),
         ];

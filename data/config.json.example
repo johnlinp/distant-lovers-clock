@@ -5,6 +5,12 @@
         "words": "It feels so good that we are in the same city."
     },
 
+    "colors":
+    {
+        "here": "MediumPurple",
+        "there": "Khaki"
+    },
+
     "trips":
     {
         "someTrip":
@@ -27,9 +33,9 @@
             "timeDiff": 1,
             "words":
             {
-                "2014/8/30": "Don't miss me.",
-                "2014/8/31": "Don't cry.",
-                "2014/9/1": "Don't worry."
+                "2014/11/14": "Don't miss me.",
+                "2014/11/15": "Don't cry.",
+                "2014/11/16": "Don't worry."
             }
         }
     }
