@@ -1,11 +1,57 @@
 (function() {
+    var who = window.location.hash.substr(1);
+    var trip;
+
+    var loadTrip = function(callback) {
+        $.get('data/config.json', function(config) {
+            chooseTrip(config);
+            callback();
+        }, 'json');
+    };
+
+    var chooseTrip = function(config) {
+        var today = getDate(new Date());
+
+        for(var tripName in config.trips) {
+            if(today in config.trips[tripName].words) {
+                trip = config.trips[tripName];
+            }
+        }
+
+        if(typeof trip == typeof undefined) {
+            trip = {
+                'here': config.home.place,
+                'there': config.home.place,
+                'timeDiff': 0,
+                'words': {}
+            };
+            trip.words[today] = config.home.words;
+        }
+    };
+
+    var circleColor = function() {
+        $.get('data/config.json', function(config) {
+            $('#here-circle').attr('fill', config.colors.here);
+            $('#there-circle').attr('fill', config.colors.there);
+        }, 'json');
+    };
+
     var getHere = function() {
-        return new Date();
+        var now = new Date();
+        if(who == 'here') {
+            return now;
+        } else if(who == 'there') {
+            return new Date(now.getTime() - trip.timeDiff * 60 * 60 * 1000);
+        }
     };
 
     var getThere = function() {
         var now = new Date();
-        return new Date(now.getTime() - 12 * 60 * 60 * 1000);
+        if(who == 'here') {
+            return new Date(now.getTime() + trip.timeDiff * 60 * 60 * 1000);
+        } else if(who == 'there') {
+            return now;
+        }
     };
 
     var getTime = function(now) {
@@ -18,28 +64,34 @@
     };
 
     var getDate = function(now) {
+        var year = now.getFullYear();
         var month = now.getMonth() + 1;
         var date = now.getDate();
-        return month + '/' + date;
+        return year + '/' + month + '/' + date;
+    };
+
+    var putPlaces = function() {
+        $('#here-text .place').html(trip.here);
+        $('#there-text .place').html(trip.there);
     };
 
     var updateClock = function() {
         var here = getHere();
         var there = getThere();
-        $('#here .time').html(getTime(here));
-        $('#here .date').html(getDate(here));
-        $('#there .time').html(getTime(there));
-        $('#there .date').html(getDate(there));
+        $('#here-text .time').html(getTime(here));
+        $('#here-text .date').html(getDate(here));
+        $('#there-text .time').html(getTime(there));
+        $('#there-text .date').html(getDate(there));
     };
 
     var fadeInAll = function() {
         var items = [
-            $('#here .place'),
-            $('#here .time'),
-            $('#here .date'),
-            $('#there .place'),
-            $('#there .time'),
-            $('#there .date'),
+            $('#here-text .place'),
+            $('#here-text .time'),
+            $('#here-text .date'),
+            $('#there-text .place'),
+            $('#there-text .time'),
+            $('#there-text .date'),
             $('#love-words-title'),
             $('#love-words-content'),
         ];
@@ -56,44 +108,41 @@
     };
 
     var putLoveWords = function() {
-        var loveWords = {
-            '7/12': 'What I did so far, is only for you.',
-            '7/13': 'Always remeber, you are mine, and I am yours.',
-            '7/14': 'I am leaving, but I will never leave you.',
-            '7/15': 'Are you missing me already? Me too.',
-            '7/16': 'Everything is meaningless without you.',
-            '7/17': '',
-            '7/18': '',
-            '7/19': '',
-            '7/20': '',
-            '7/21': '',
-            '7/22': '',
-            '7/23': '',
-            '7/24': '',
-            '7/25': '',
-            '7/26': '',
-            '7/27': '',
-            '7/28': '',
-            '7/29': '',
-            '7/30': '',
-            '7/31': '',
-            '8/1': '',
-            '8/2': '',
-            '8/3': '',
-            '8/4': '',
-            '8/5': '',
-            '8/6': '',
-            '8/7': '',
-            '8/8': '',
-            '8/9': '',
-        };
-
-        $('#love-words-content').html(loveWords[getDate(getHere())]);
+        var today = trip.words[getDate(getHere())];
+        $('#love-words-content').html(today);
     };
 
-    updateClock();
-    setInterval(updateClock, 5000);
-    putLoveWords();
-    fadeInAll();
+    var whoAreYou = function() {
+        $('#here-text .choose').html('Please');
+        $('#there-text .choose').html('Choose');
+
+        var handler = function(evt) {
+            $('.choose').hide();
+            who = $(evt.target).attr('data-which');
+            window.location = '#' + who;
+            showAll();
+        };
+
+        $('#here-circle').one('click', handler);
+        $('#there-circle').one('click', handler);
+        $('.choose').one('click', handler);
+    };
+
+    var showAll = function() {
+        loadTrip(function() {
+            putPlaces();
+            updateClock();
+            setInterval(updateClock, 5000);
+            putLoveWords();
+            fadeInAll();
+        });
+    };
+
+    circleColor();
+    if(who != 'here' && who != 'there') {
+        whoAreYou();
+    } else {
+        showAll();
+    }
 })();
 

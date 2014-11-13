@@ -1,0 +1,42 @@
+{
+    "home":
+    {
+        "place": "Taipei, Taiwan",
+        "words": "It feels so good that we are in the same city."
+    },
+
+    "colors":
+    {
+        "here": "MediumPurple",
+        "there": "Khaki"
+    },
+
+    "trips":
+    {
+        "someTrip":
+        {
+            "here": "Taipei, Taiwan",
+            "there": "Quebec, Canada",
+            "timeDiff": -12,
+            "words":
+            {
+                "2014/7/12": "I love you.",
+                "2014/7/13": "I still love you.",
+                "2014/7/14": "I love you so much."
+            }
+        },
+
+        "otherTrip":
+        {
+            "here": "Taipei, Taiwan",
+            "there": "Tokyo, Japan",
+            "timeDiff": 1,
+            "words":
+            {
+                "2014/11/14": "Don't miss me.",
+                "2014/11/15": "Don't cry.",
+                "2014/11/16": "Don't worry."
+            }
+        }
+    }
+}

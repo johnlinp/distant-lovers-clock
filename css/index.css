@@ -25,12 +25,16 @@ body {
     width: 500px;
 }
 
-#here {
+circle {
+    cursor: pointer;
+}
+
+#here-text {
     left: 0;
     color: White;
 }
 
-#there {
+#there-text {
     left: 500px;
     color: Black;
 }
@@ -49,6 +53,12 @@ body {
 .date {
     font-size: 40px;
     opacity: 0;
+}
+
+.choose {
+    font-size: 50px;
+    padding-top: 70px;
+    cursor: pointer;
 }
 
 #love-words-title {
