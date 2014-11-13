@@ -16,15 +16,17 @@
                 <div class="place"></div>
                 <div class="time"></div>
                 <div class="date"></div>
+                <div class="choose" data-which="here"></div>
             </div>
             <div id="there-text" class="zone">
                 <div class="place"></div>
                 <div class="time"></div>
                 <div class="date"></div>
+                <div class="choose" data-which="there"></div>
             </div>
             <svg id="circles" height="500" width="1000">
-                <circle id="here-circle" cx="250" cy="250" r="250" fill="Gainsboro" />
-                <circle id="there-circle" cx="750" cy="250" r="250" fill="Gainsboro" />
+                <circle id="here-circle" data-which="here" cx="250" cy="250" r="250" fill="Gainsboro" />
+                <circle id="there-circle" data-which="there" cx="750" cy="250" r="250" fill="Gainsboro" />
             </svg>
         </div>
         <div id="footer">
