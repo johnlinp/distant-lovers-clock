@@ -119,6 +119,20 @@
                 "2014/11/6": "Today is the only day for visiting Pittsburgh!",
                 "2014/11/7": "The real me is going back to you."
             }
+        },
+        "blockShowSingapore":
+        {
+            "here": "Marina Bay Sands, Singapore",
+            "there": "Taipei, Taiwan",
+            "timeDiff": 0,
+            "words":
+            {
+                "2019/11/12": "Is it the best hotel in the world?",
+                "2019/11/13": "I know that taking care of our children is tough.",
+                "2019/11/14": "Your pillow and quilt smells wonderful.",
+                "2019/11/15": "Can't wait to see you tomorrow.",
+                "2019/11/16": "Welcome home."
+            }
         }
     }
 }
